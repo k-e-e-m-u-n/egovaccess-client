@@ -412,8 +412,8 @@ button a {
     height: 12rem;
 }
 .about-us-section {
-    height: 101.62rem;
-    background-image: url("/IMAGES/lagosNigeria.jpeg");
+    height: 10rem;
+    /* background-image: url("/IMAGES/lagosNigeria.jpeg"); */
     background-size:153.9rem;
     background-repeat: no-repeat;
     background-position-y:15rem ;
