@@ -731,3 +731,9 @@ body {
   font-weight: 700px;
   gap: 8px;
 }
+
+.updates-style a {
+  text-decoration: none;
+  color: black;
+  font-family: inherit;
+}
