@@ -1,0 +1,84 @@
+:root {
+    --bg-dark :#09090B;
+    --bg-green: linear-gradient(90deg, #FDFC47 0%, #24FE41 100%);
+    --hov-green: #EAFF00;
+    --e-govWhite : white;
+    --e-govBlack : black ;
+    --font-family:"Inter",sans-serif;
+}
+.flex {
+    display: flex;
+}
+.flex-dir-c {
+    flex-direction: column;
+}
+.jc-c {
+    justify-content: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-se {
+    justify-content: space-evenly;
+}
+.jc-sa {
+    justify-content: space-around;
+}
+.align-c {
+    align-items: center;
+}
+.p-rel {
+    position: relative;
+}
+.d-grid {
+    display: grid;
+    place-items: center;
+}
+.center {
+    display: grid;
+    place-items: center;
+}
+.li-s-t {
+    list-style-type: none;
+}
+
+.deco-none {
+    text-decoration: none;
+}
+.black {
+    color: black;
+}
+.white {
+    color:var(--e-govWhite);
+}
+.bg-b {
+    background: var(--bg-dark);
+}
+.bg-lg {
+    background: var(--bg-green);
+}
+.z-1 {
+    z-index: -1;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.p-rel {
+    position: relative;
+}
+.p-abs {
+    position: absolute;
+}
+.service-wrapper span {
+    font-size:2.5rem ;
+}
+.service-logo-wrapper {
+    width: 50%;
+}
+
+/* button {
+    border: 1px solid var(--bg-green);
+} */
+.t-al {
+    text-align: center;
+}

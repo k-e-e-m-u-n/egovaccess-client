@@ -1,0 +1,108 @@
+@import url("utility.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+.signup-container {
+    width: 60%;
+    height: 100%;
+    padding: 4rem 2rem;
+    padding-left: 10rem;
+    gap: 3rem;
+}
+.welcome-txt {
+    font-size: 2.5rem;
+}
+.login-wrap {
+    font-size: 1.5rem;
+}
+.login-wrap a {
+    color: black;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+.inp-form {
+    gap: 1.5rem;
+}
+.input-wrap label {
+    font-size: 1.5rem;
+}
+.input-wrap input {
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    height: 4rem;
+    width: 66.6rem;
+    border-radius: 0.5rem;
+    text-indent: 1.5rem;
+}
+.check-wrapper {
+    gap: 2rem;
+}
+.check-wrapper p,div{
+    font-size: 1.5rem;
+}
+.check-wrapper div a {
+    color: black;
+    font-weight: 600;
+}
+.signup-container button {
+    background: var(--bg-green);
+    width: 25rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.signup-container button:hover {
+    color: white;
+    background: black;
+
+}
+.img-container {
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+}
+.side-img {
+    object-fit:cover;
+    width: 80rem;
+    height: 61rem;
+    position: relative;
+    right: 20rem;
+    /* transition: all 3s ease-in-out; */
+}
+.img-l {
+    width: 6rem;
+    position: absolute;
+    top: 1rem;
+    left: 50rem;
+    z-index: 1;
+    background-color: rgb(12, 12, 12);
+    border-radius: 50%;
+
+}
+.e-txt {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-weight: 700;
+    font-size: 8rem;
+    left: 27rem;
+    top: 48rem;
+    line-height: 6rem;
+    text-align: right;
+}

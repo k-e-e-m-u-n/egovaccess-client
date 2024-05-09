@@ -1,0 +1,521 @@
+@import url("utility.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+:root {
+    --bg-dark :#09090b;
+    --bg-green: linear-gradient(90deg, #FDFC47 0%, #24FE41 100%);
+    --hov-green: #EAFF00;
+    --e-govWhite : white;
+    --e-govBlack : rgb(0, 0, 0) ;
+    --font-family:"Inter",sans-serif;
+
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+}
+ header {
+    padding: 0.2rem 10rem;
+    background-color: var(--bg-dark);
+    width: 100vw;
+    /* height: 11rem; */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+nav {
+    gap: 2.5rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--e-govWhite);
+}
+nav li {
+    list-style-type:none;
+}
+.search-cnt {
+    height: 4.2rem;
+    width: 29.6rem;
+    background: var(--bg-green);
+    border-radius: 1rem;
+}
+.search-cnt input {
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    height: 4rem;
+    width: 29.5rem;
+    text-indent: 1.5rem;
+    color: black;
+}
+.search-cnt input:focus{
+    background-color: black;
+    color: white;
+}
+.logo-container  {
+    gap: 1rem;
+    width: 25rem;
+    height: 5rem;
+    /* z-index: -1; */
+    margin-left: -8rem;
+}
+.logo-txt {
+    font-size: 1.8rem;
+
+}
+.navigation {
+    gap: 1rem;
+}
+.navigation div:last-child {
+    background: var(--e-govWhite);
+   
+}
+.navigation div:last-child a{
+    color: var(--e-govBlack);
+}
+.nav-btn1:hover{
+    background-color: var(--hov-green);
+}
+.nav-btn1:hover a {
+    color: black;
+}
+.nav-btn:hover {
+    background: var(--hov-green);
+}
+.navigation div {
+    border: 1px solid var(--hov-green);
+    border-radius: 1rem;
+    width: 10rem;
+    height: 4rem;
+}
+.navigation-li ul {
+    width: 100%;
+    gap: 3rem;
+    font-weight: 400;
+}
+.nav-i-wrapper {
+    border-bottom: 1px solid var(--e-govWhite);
+    padding: 2rem;
+}
+header:hover .nav-i-wrapper {
+    border-bottom: 1px solid var(--hov-green);
+}
+.container {
+    background-image: url("/IMAGES/Main\ Background.jpg");
+    background-size:cover;
+    background-position:center;
+    /* height: 130vh; */
+    /* max-width: 100vw; */
+}
+.hero-section {
+    height: 170vh;
+    max-width: 100vw;
+}
+
+.hero-section-text h1 {
+    font-weight: 400;
+    font-size: 4.8rem;
+    margin-bottom: 4rem;
+}
+/* .hero-section-text span {
+     letter-spacing: -0.4rem;
+} */
+.hero-section-text span:first-child {
+    font-weight: 700;
+    font-size: 12.5rem;
+}
+.hero-section-text span:last-child {
+    font-weight: 700;
+    font-size: 9rem;
+    margin-left: -1.6rem;
+}
+.sp {
+    font-size: 3.6rem;
+    font-weight: 700;
+    width: 76rem;
+    text-align: center;
+}
+
+.hero-section-text p:last-child {
+    /* margin-top: -2rem; */
+    font-size: 3rem;
+    width: 70.9rem;
+}
+.hero-section-btns {
+    gap: 2rem;
+    width: 30rem;
+    margin-left: 25rem;
+    margin-bottom: -4rem;
+}
+.hero-section-btns button{
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+}
+button a {
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+}
+.service-section-wrapper {
+    height: 140vh;
+    max-width: 100vw;
+    padding: 2rem 4rem;
+    gap: 3rem;
+}
+.logo-container img {
+    width: 10rem;
+    border-radius: 2rem;
+    background-color: white;
+}
+.services-container {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+  
+}
+.ss-text div:first-child {
+    font-size: 9rem;
+}
+.ss-text div:nth-child(2) {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.ss-text div:last-child {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.services-container .wrap{
+    border: 1px solid rgba(22, 22, 22, 0.212);
+    padding: 1rem;
+    border-radius: 2rem;
+    position: relative;
+    height: 16rem;
+    width: 33rem;
+    transition: all 2s ease-in-out;
+    overflow: hidden;
+}
+.wrap img {
+    position: absolute;
+    bottom: 3rem;
+    left: 11.7rem;
+    transition: all 1s ease-in-out;
+}
+
+.text-container {
+    position: absolute;
+    width: 20rem;
+    left: 25rem;
+    color:rgba(0, 0, 0, 0) ;
+    transition: all 1s ease-in-out;
+    text-align: center;
+    font-weight: 500;
+}
+.wrap:hover {
+    background: var(--bg-green);
+    transition: all 1.5s ease-in-out;
+}
+.wrap:hover .text-container {
+    width: 20;
+    left: 10rem;
+    color:rgba(0, 0, 0, 0.87) ; 
+}
+.wrap:hover img {
+    left: 1rem;
+}
+.more-services-btn {
+    text-decoration: none;
+    color:white ;
+    background: var(--bg-green); 
+    width: 25.2rem;
+    height: 7.2rem;
+    transition: all .7s ease-in-out;
+    
+}
+.more-services-btn, .more-services-btn div {
+    border-radius: 2rem;
+}
+.more-services-btn div {
+    width: 25rem;
+    height: 7rem;
+    font-size: 2rem;
+    background-color: black;  
+    font-weight: 500;
+    transition: all .7s ease-in-out;
+    
+}
+.more-services-btn:hover div {
+    background: inherit;
+    color: black;
+}
+
+.connect-section-wrapper {
+    min-height: 150vh;
+    max-width: 100vw;
+    padding-top: 10rem;
+}
+.connect-section-wrapper span{
+    display: flex;
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+}
+.connect-section-container {
+    background-color: var(--bg-dark);
+    width: 100%;
+    min-height: 170vh;
+    margin-top:2rem ;
+    border-radius: 30rem 30rem 10rem 10rem;
+}
+.b-i {
+    width: 64%;
+    /* height: 35rem; */
+    margin-top: 10rem;
+    text-align: right;
+    background-image: url("/IMAGES/Blob\ Stroke.png");
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position-y: -1rem;
+    background-position-x:1.5rem ;
+   
+}
+.b-i img{
+    width: 30rem;
+}
+.enhance-txt {
+    position: relative;
+    top: 5rem;
+    width: 55%;
+    color: #e2e2e2;
+}
+.enhance-txt p:first-child{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.enhance-txt p:nth-child(2){
+    font-size: 3rem;
+    font-weight: 400;
+}
+.join-txt {
+    position: relative;
+    top: 18rem;
+    right: 1rem;
+}
+.st {
+    width: 114rem;
+    height: 60rem;
+    background-image: url("/IMAGES/Green Blob.jpg");
+    background-repeat: no-repeat;
+    background-size: 55rem;
+    background-position-x:-5rem;
+    position: relative;
+    right: 9.5rem;
+}
+.st img {
+    width: 45rem;
+    position: relative;
+    left: 25rem;
+    top: 5rem;
+}
+.jt p{
+    text-align: right;
+    margin-left: -35rem;
+    color: rgba(255, 255, 255, 0.685);
+}
+.jt p:first-child {
+    font-size: 4rem;
+}
+.jt p:nth-child(2) {
+    font-size: 5rem;
+    color: var(--e-govWhite);
+    font-weight: 600;
+}
+.st ul {
+    list-style-type: none;
+    position: relative;
+    top: 27rem;
+    left: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.updates-section{
+    height: 146vh;
+}
+.updates-text {
+    font-size: 7.2rem;
+    text-align: center;
+}
+.updates {
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem 4rem;
+    gap: 2rem;
+}
+.updates-wrapper {
+    width: 42.2rem;
+    height: 40rem;
+    text-align: center; 
+    overflow: hidden;
+    border-radius: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+.updates-wrapper img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    transition: all 1s ease-in-out;
+}
+
+.updates-t {
+    gap: 1rem;
+    position:absolute;
+    top: 0;
+    color: white;
+    backdrop-filter: brightness(65%);
+    width: inherit;
+    height: inherit;
+    transition: all 1s ease-in-out;
+}
+.updates-wrapper:hover {
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.658);
+}
+.updates-wrapper:hover img {
+    scale: 1.06;
+}
+.updates-wrapper:hover .updates-t {
+    backdrop-filter: brightness(45%);
+}
+.updates-t div:first-child {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.updates-t span {
+    width: 32rem;
+    height: 4rem;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.updates-t p{
+    width: 29rem;
+    height: 12rem;
+}
+.about-us-section {
+    height: 101.62rem;
+    background-image: url("/IMAGES/lagosNigeria.jpeg");
+    background-size:153.9rem;
+    background-repeat: no-repeat;
+    background-position-y:15rem ;
+}
+.bg-d {
+    height:inherit;
+    backdrop-filter: brightness(30%);
+    color: var(--e-govWhite);
+    padding: 4rem ;
+}
+.bg-d span {
+    font-size: 12.8rem;
+    position: absolute;
+    top: 23rem;
+    right: 10rem;
+    width: 38.5rem;
+    line-height: 11rem;
+    text-align: right;
+}
+.bg-d p:first-of-type{
+    width:85.5rem ;
+    height: 28.8rem;
+    font-size:2.3rem;
+    margin-top: 25rem;
+  
+}
+.bg-d p:last-of-type {
+    width: 85.5rem ;
+    height: 36rem;
+    font-size:2.3rem;
+    margin-top: -10rem;
+}
+.bg-d p {
+    text-align: left;
+}
+footer {
+    min-height: 90vh;
+    border: 1px solid black;
+}
+.sub {
+    height: 37vh;
+    width: 98.8vw;
+   background-image: url("/IMAGES/3d-abstract-cyber-background-with-flowing-particles-design.jpg");
+    padding: 4rem 0rem;
+}
+.sub span {
+    color: var(--e-govWhite);
+    font-size: 4rem;
+    padding: 2rem;
+    font-weight: 600;
+}
+.input {
+    margin-right: 8rem;
+    display: flex;
+    gap: 2rem;
+
+}
+.input input {
+    height:4rem;
+    width: 50rem;
+    border: none;
+    text-indent: 1.5rem;
+    border-radius: 1.7rem;
+    outline: none;
+}
+.input input::placeholder {
+    color: black;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+.input button {
+    border: none;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+}
+.input button a {
+    font-weight: 700;
+}
+.ft-i {
+    height: calc(140vh - 37vh);
+    background-image: url("/IMAGES/3d-abstract-cyber-background-with-flowing-particles-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 99vw;
+}
+
+footer img {
+    width: 13rem;
+    background-color: #13131f;
+    border-radius: 50%;
+    position: relative;
+    left: 60rem;
+    top: 8rem;
+}
+.footer-items {
+    position: relative;
+    top: 20rem;
+    color:var(--e-govWhite);
+}
+.hr-box {
+    width: 1rem;
+    height: 1rem;
+    color: white;
+}

@@ -1,0 +1,101 @@
+@import url("utility.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/IMAGES/bg.jpeg");
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: 144rem;
+}
+.wrapper {
+    background-color: white;
+    width: 75rem;
+    height: 60rem;
+    border-radius: 3rem;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0,0.2);
+    gap: 3rem;
+    padding: 2rem 2rem;
+}
+.login-txt{
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+.form-login {
+    gap: 2.5rem;
+}
+.input-cnt {
+    font-size: 1.5rem;
+
+}
+.input-cnt input {
+    width: 66.4rem;
+    height: 5rem;
+    border-radius:1rem;
+    border: none;
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    border: 1.5px solid grey;
+    outline: none;
+}
+.form-login button {
+    background: var(--bg-green);
+    width: 25rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: none;
+    
+}
+.form-login button a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.form-login button a:hover,button:hover {
+    color: white;
+    background: black;
+}
+
+.hr-wrapper {
+    width: 65rem;
+    gap: 1.5rem;
+}
+.hr-l {
+    width: 23rem;
+    height: 1px;
+    background-color: black;
+}
+
+ .other-login-wrapper {
+    gap: 1rem;
+ }
+ .other-login-wrapper div{
+    border: 1px solid gray;
+    border-radius: 2rem;
+    width:52.7rem ;
+    height: 5rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+ }
+.logo {
+    background-color: black;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+.logo-img {
+    width: 5rem;
+    height: 5rem;
+}
