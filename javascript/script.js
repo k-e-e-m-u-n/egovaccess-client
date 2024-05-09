@@ -1,5 +1,5 @@
 import APIRequest from "./menuNavigationApi.js";
-import MenuNavigationUI from "./menunavigationContent.js";
+import MenuNavigationUI from "../menuNavigationContent.js";
 import menuNavigation from "./menuNavigation.js";
 
 const card = document.querySelector(".card");

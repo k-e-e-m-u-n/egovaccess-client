@@ -1,4 +1,4 @@
-import MenuNavigationUI from "./menunavigationContent.js";
+import MenuNavigationUI from "../menuNavigationContent.js";
 import APIRequest from "./menuNavigationApi.js";
 
 const menuNavigation = document.querySelectorAll(".menu-navigation");
