@@ -737,3 +737,16 @@ body {
   color: black;
   font-family: inherit;
 }
+.updates-style:hover {
+  background: black;
+  color: white;
+}
+.updates-style:hover a {
+  background: black;
+  color: white;
+}
+
+.style:hover {
+  background:  linear-gradient(90deg, #FDFC47 0%, #24FE41 100%);
+  border-radius: inherit;
+}
